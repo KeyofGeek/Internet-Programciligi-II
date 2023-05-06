@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="VizeDBModelStoreContainer" CdmEntityContainer="VizeDBEntities">
+    <EntitySetMapping Name="Cevap">
+      <EntityTypeMapping TypeName="VizeDBModel.Cevap">
+        <MappingFragment StoreEntitySet="Cevap">
+          <ScalarProperty Name="secId" ColumnName="secId" />
+          <ScalarProperty Name="secenek" ColumnName="secenek" />
+          <ScalarProperty Name="cevap" ColumnName="cevap" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Soru">
+      <EntityTypeMapping TypeName="VizeDBModel.Soru">
+        <MappingFragment StoreEntitySet="Soru">
+          <ScalarProperty Name="soruId" ColumnName="soruId" />
+          <ScalarProperty Name="soru" ColumnName="soru" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Table">
+      <EntityTypeMapping TypeName="VizeDBModel.Kayit">
+        <MappingFragment StoreEntitySet="Table">
+          <ScalarProperty Name="kayId" ColumnName="kayId" />
+          <ScalarProperty Name="kaySorId" ColumnName="kaySorId" />
+          <ScalarProperty Name="kaySecId" ColumnName="kaySecId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="fe00b4ff5a874e36ab110c16bfea7514" Name="Diagram1">
+        <EntityTypeShape EntityType="VizeDBModel.Cevap" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="VizeDBModel.Soru" Width="1.5" PointX="0.75" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="VizeDBModel.Kayit" Width="1.5" PointX="3.5" PointY="1.875" IsExpanded="true" />
+        <AssociationConnector Association="VizeDBModel.FK_Table_ToCevap" ManuallyRouted="false" />
+        <AssociationConnector Association="VizeDBModel.FK_Table_ToSoru" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

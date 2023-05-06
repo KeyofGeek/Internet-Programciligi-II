@@ -1,0 +1,93 @@
+C:\Users\galli\Masaüstü\School\Yıl 4 Donem 2\Internet Programciligi II\Proje\vize\vize\bin\ApplicationInsights.config
+C:\Users\galli\Masaüstü\School\Yıl 4 Donem 2\Internet Programciligi II\Proje\vize\vize\bin\roslyn\csc.exe
+C:\Users\galli\Masaüstü\School\Yıl 4 Donem 2\Internet Programciligi II\Proje\vize\vize\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\galli\Masaüstü\School\Yıl 4 Donem 2\Internet Programciligi II\Proje\vize\vize\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\galli\Masaüstü\School\Yıl 4 Donem 2\Internet Programciligi II\Proje\vize\vize\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\galli\Masaüstü\School\Yıl 4 Donem 2\Internet Programciligi II\Proje\vize\vize\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\galli\Masaüstü\School\Yıl 4 Donem 2\Internet Programciligi II\Proje\vize\vize\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\galli\Masaüstü\School\Yıl 4 Donem 2\Internet Programciligi II\Proje\vize\vize\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\galli\Masaüstü\School\Yıl 4 Donem 2\Internet Programciligi II\Proje\vize\vize\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\galli\Masaüstü\School\Yıl 4 Donem 2\Internet Programciligi II\Proje\vize\vize\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\galli\Masaüstü\School\Yıl 4 Donem 2\Internet Programciligi II\Proje\vize\vize\bin\roslyn\vbc.exe
+C:\Users\galli\Masaüstü\School\Yıl 4 Donem 2\Internet Programciligi II\Proje\vize\vize\bin\roslyn\VBCSCompiler.exe
+C:\Users\galli\Masaüstü\School\Yıl 4 Donem 2\Internet Programciligi II\Proje\vize\vize\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\galli\Masaüstü\School\Yıl 4 Donem 2\Internet Programciligi II\Proje\vize\vize\bin\vize.dll.config
+C:\Users\galli\Masaüstü\School\Yıl 4 Donem 2\Internet Programciligi II\Proje\vize\vize\bin\vize.dll
+C:\Users\galli\Masaüstü\School\Yıl 4 Donem 2\Internet Programciligi II\Proje\vize\vize\bin\vize.pdb
+C:\Users\galli\Masaüstü\School\Yıl 4 Donem 2\Internet Programciligi II\Proje\vize\vize\bin\EntityFramework.dll
+C:\Users\galli\Masaüstü\School\Yıl 4 Donem 2\Internet Programciligi II\Proje\vize\vize\bin\EntityFramework.SqlServer.dll
+C:\Users\galli\Masaüstü\School\Yıl 4 Donem 2\Internet Programciligi II\Proje\vize\vize\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\galli\Masaüstü\School\Yıl 4 Donem 2\Internet Programciligi II\Proje\vize\vize\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\galli\Masaüstü\School\Yıl 4 Donem 2\Internet Programciligi II\Proje\vize\vize\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\galli\Masaüstü\School\Yıl 4 Donem 2\Internet Programciligi II\Proje\vize\vize\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\galli\Masaüstü\School\Yıl 4 Donem 2\Internet Programciligi II\Proje\vize\vize\bin\Microsoft.AI.Web.dll
+C:\Users\galli\Masaüstü\School\Yıl 4 Donem 2\Internet Programciligi II\Proje\vize\vize\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\galli\Masaüstü\School\Yıl 4 Donem 2\Internet Programciligi II\Proje\vize\vize\bin\Microsoft.ApplicationInsights.dll
+C:\Users\galli\Masaüstü\School\Yıl 4 Donem 2\Internet Programciligi II\Proje\vize\vize\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\galli\Masaüstü\School\Yıl 4 Donem 2\Internet Programciligi II\Proje\vize\vize\bin\Newtonsoft.Json.dll
+C:\Users\galli\Masaüstü\School\Yıl 4 Donem 2\Internet Programciligi II\Proje\vize\vize\bin\System.Net.Http.Formatting.dll
+C:\Users\galli\Masaüstü\School\Yıl 4 Donem 2\Internet Programciligi II\Proje\vize\vize\bin\System.Web.Http.dll
+C:\Users\galli\Masaüstü\School\Yıl 4 Donem 2\Internet Programciligi II\Proje\vize\vize\bin\System.Web.Http.WebHost.dll
+C:\Users\galli\Masaüstü\School\Yıl 4 Donem 2\Internet Programciligi II\Proje\vize\vize\bin\EntityFramework.xml
+C:\Users\galli\Masaüstü\School\Yıl 4 Donem 2\Internet Programciligi II\Proje\vize\vize\bin\EntityFramework.SqlServer.xml
+C:\Users\galli\Masaüstü\School\Yıl 4 Donem 2\Internet Programciligi II\Proje\vize\vize\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\galli\Masaüstü\School\Yıl 4 Donem 2\Internet Programciligi II\Proje\vize\vize\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\galli\Masaüstü\School\Yıl 4 Donem 2\Internet Programciligi II\Proje\vize\vize\bin\Microsoft.AI.Web.xml
+C:\Users\galli\Masaüstü\School\Yıl 4 Donem 2\Internet Programciligi II\Proje\vize\vize\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\galli\Masaüstü\School\Yıl 4 Donem 2\Internet Programciligi II\Proje\vize\vize\bin\Microsoft.ApplicationInsights.xml
+C:\Users\galli\Masaüstü\School\Yıl 4 Donem 2\Internet Programciligi II\Proje\vize\vize\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\galli\Masaüstü\School\Yıl 4 Donem 2\Internet Programciligi II\Proje\vize\vize\bin\Newtonsoft.Json.xml
+C:\Users\galli\Masaüstü\School\Yıl 4 Donem 2\Internet Programciligi II\Proje\vize\vize\bin\System.Net.Http.Formatting.xml
+C:\Users\galli\Masaüstü\School\Yıl 4 Donem 2\Internet Programciligi II\Proje\vize\vize\bin\System.Web.Http.xml
+C:\Users\galli\Masaüstü\School\Yıl 4 Donem 2\Internet Programciligi II\Proje\vize\vize\bin\System.Web.Http.WebHost.xml
+C:\Users\galli\Masaüstü\School\Yıl 4 Donem 2\Internet Programciligi II\Proje\vize\vize\obj\Debug\vize.csprojResolveAssemblyReference.cache
+C:\Users\galli\Masaüstü\School\Yıl 4 Donem 2\Internet Programciligi II\Proje\vize\vize\obj\Debug\vize.dll
+C:\Users\galli\Masaüstü\School\Yıl 4 Donem 2\Internet Programciligi II\Proje\vize\vize\obj\Debug\vize.pdb
+C:\Internet Programciligi II\vize\vize\bin\ApplicationInsights.config
+C:\Internet Programciligi II\vize\vize\bin\roslyn\csc.exe
+C:\Internet Programciligi II\vize\vize\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Internet Programciligi II\vize\vize\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Internet Programciligi II\vize\vize\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Internet Programciligi II\vize\vize\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Internet Programciligi II\vize\vize\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Internet Programciligi II\vize\vize\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Internet Programciligi II\vize\vize\bin\roslyn\System.Collections.Immutable.dll
+C:\Internet Programciligi II\vize\vize\bin\roslyn\System.Reflection.Metadata.dll
+C:\Internet Programciligi II\vize\vize\bin\roslyn\vbc.exe
+C:\Internet Programciligi II\vize\vize\bin\roslyn\VBCSCompiler.exe
+C:\Internet Programciligi II\vize\vize\bin\roslyn\VBCSCompiler.exe.config
+C:\Internet Programciligi II\vize\vize\bin\vize.dll.config
+C:\Internet Programciligi II\vize\vize\bin\vize.dll
+C:\Internet Programciligi II\vize\vize\bin\vize.pdb
+C:\Internet Programciligi II\vize\vize\bin\EntityFramework.dll
+C:\Internet Programciligi II\vize\vize\bin\EntityFramework.SqlServer.dll
+C:\Internet Programciligi II\vize\vize\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Internet Programciligi II\vize\vize\bin\Microsoft.AI.DependencyCollector.dll
+C:\Internet Programciligi II\vize\vize\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Internet Programciligi II\vize\vize\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Internet Programciligi II\vize\vize\bin\Microsoft.AI.Web.dll
+C:\Internet Programciligi II\vize\vize\bin\Microsoft.AI.WindowsServer.dll
+C:\Internet Programciligi II\vize\vize\bin\Microsoft.ApplicationInsights.dll
+C:\Internet Programciligi II\vize\vize\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Internet Programciligi II\vize\vize\bin\Newtonsoft.Json.dll
+C:\Internet Programciligi II\vize\vize\bin\System.Net.Http.Formatting.dll
+C:\Internet Programciligi II\vize\vize\bin\System.Web.Http.dll
+C:\Internet Programciligi II\vize\vize\bin\System.Web.Http.WebHost.dll
+C:\Internet Programciligi II\vize\vize\bin\EntityFramework.xml
+C:\Internet Programciligi II\vize\vize\bin\EntityFramework.SqlServer.xml
+C:\Internet Programciligi II\vize\vize\bin\Microsoft.AI.DependencyCollector.xml
+C:\Internet Programciligi II\vize\vize\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Internet Programciligi II\vize\vize\bin\Microsoft.AI.Web.xml
+C:\Internet Programciligi II\vize\vize\bin\Microsoft.AI.WindowsServer.xml
+C:\Internet Programciligi II\vize\vize\bin\Microsoft.ApplicationInsights.xml
+C:\Internet Programciligi II\vize\vize\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Internet Programciligi II\vize\vize\bin\Newtonsoft.Json.xml
+C:\Internet Programciligi II\vize\vize\bin\System.Net.Http.Formatting.xml
+C:\Internet Programciligi II\vize\vize\bin\System.Web.Http.xml
+C:\Internet Programciligi II\vize\vize\bin\System.Web.Http.WebHost.xml
+C:\Internet Programciligi II\vize\vize\obj\Debug\vize.dll
+C:\Internet Programciligi II\vize\vize\obj\Debug\vize.pdb
+C:\Internet Programciligi II\vize\vize\bin\Microsoft.Web.Infrastructure.dll
+C:\Internet Programciligi II\vize\vize\bin\Swashbuckle.Core.dll
+C:\Internet Programciligi II\vize\vize\bin\WebActivatorEx.dll
+C:\Internet Programciligi II\vize\vize\obj\Debug\vize.csprojResolveAssemblyReference.cache

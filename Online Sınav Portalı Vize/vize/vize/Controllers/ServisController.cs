@@ -1,0 +1,272 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using System.Net.Http;
+using System.Web.Http;
+using vize.Models;
+using vize.ViewModel;
+using vize.Controllers;
+
+namespace vize.Controllers
+{
+    public class ServisController : ApiController
+    {
+        VizeDBEntities db = new VizeDBEntities();
+        SonucModel sonuc = new SonucModel();
+
+        #region Soru
+
+        [HttpGet]
+        [Route("api/soruliste")]
+        public List<SoruModel> SoruListe()
+        {
+            List<SoruModel> liste = db.Soru.Select(x => new SoruModel()
+            {
+                soruId = x.soruId,
+                soru = x.soru
+            }).ToList();
+
+            return liste;
+        }
+
+        [HttpGet]
+        [Route("api/sorubyid/{soruId}")]
+        public SoruModel SoruById(string soruId)
+        {
+            SoruModel kayit = db.Soru.Where(s => s.soruId == soruId).Select(x => new SoruModel()
+            {
+                soruId = x.soruId,
+                soru = x.soru
+            }).FirstOrDefault();
+
+            return kayit;
+        }
+
+        [HttpPost]
+        [Route("api/soruekle")]
+        public SonucModel SoruEkle(SoruModel model)
+        {
+            Soru yeni = new Soru();
+            yeni.soruId = Guid.NewGuid().ToString();
+            yeni.soru = model.soru;
+
+            db.Soru.Add(yeni);
+            db.SaveChanges();
+            sonuc.islem = true;
+            sonuc.mesaj = "Soru Eklendi";
+            return sonuc;
+        }
+
+        [HttpPut]
+        [Route("api/dersduzenle")]
+        public SonucModel SoruDuzenle(SoruModel model)
+        {
+            Soru kayit = db.Soru.Where(s => s.soruId == model.soruId).FirstOrDefault();
+
+            if (kayit == null)
+            {
+                sonuc.islem = false;
+                sonuc.mesaj = "Soru bulunamadı";
+                return sonuc;
+            }
+
+            kayit.soru = model.soru;
+            db.SaveChanges();
+
+            sonuc.islem = true;
+            sonuc.mesaj = "Soru düzenlendi";
+            return sonuc;
+        }
+
+        [HttpDelete]
+        [Route("api/sorusil/{soruId}")]
+        public SonucModel SoruSil(string soruId)
+        {
+            Soru kayit = db.Soru.Where(s => s.soruId == soruId).FirstOrDefault();
+
+            if (kayit == null)
+            {
+                sonuc.islem = false;
+                sonuc.mesaj = "Soru bulunamadı";
+                return sonuc;
+            }
+
+            if (db.Kayit.Count(s=>s.kaySorId==soruId)>0)
+            {
+                sonuc.islem = false;
+                sonuc.mesaj = "Soruya kayıtlı seçenekler bulunduğu için kayıt silinemez";
+                return sonuc;
+            }
+
+            db.Soru.Remove(kayit);
+            db.SaveChanges();
+            sonuc.islem = true;
+            sonuc.mesaj = "Soru silindi";
+            return sonuc;
+        }
+
+        #endregion
+
+        #region Cevap
+
+        [HttpGet]
+        [Route("api/cevapliste")]
+        public List<CevapModel> CevapListe()
+        {
+            List<CevapModel> liste = db.Cevap.Select(x => new CevapModel()
+            {
+                secId=x.secId,
+                secenek=x.secenek,
+                cevap=x.cevap
+            }).ToList();
+
+            return liste;
+        }
+
+        [HttpGet]
+        [Route("api/cevapbyid/{secId}")]
+        public CevapModel CevapById(string secId)
+        {
+            CevapModel kayit = db.Cevap.Where(s => s.secId == secId).Select(x => new CevapModel()
+            {
+                secId = x.secId,
+                secenek = x.secenek,
+                cevap = x.cevap
+            }).SingleOrDefault();
+            return kayit;
+        }
+
+        [HttpPost]
+        [Route("api/cevapekle")]
+        public SonucModel CevapEkle(CevapModel model)
+        {
+            Cevap yeni = new Cevap();
+            yeni.secId = Guid.NewGuid().ToString();
+            yeni.secenek = model.secenek;
+            yeni.cevap = model.cevap;
+            db.Cevap.Add(yeni);
+            db.SaveChanges();
+            sonuc.islem = true;
+            sonuc.mesaj = "Seçenek eklendi";
+            return sonuc;
+        }
+
+        [HttpPut]
+        [Route("api/cevapduzenle")]
+        public SonucModel CevapDuzenle(CevapModel model)
+        {
+            Cevap kayit = db.Cevap.Where(s => s.secId == model.secId).FirstOrDefault();
+
+            if (kayit == null)
+            {
+                sonuc.islem = false;
+                sonuc.mesaj = "Soru bulunamadı";
+                return sonuc;
+            }
+
+            kayit.secenek = model.secenek;
+            kayit.cevap = model.cevap;
+            db.SaveChanges();
+
+            sonuc.islem = true;
+            sonuc.mesaj = "Seçenek düzenlendi";
+            return sonuc;
+        }
+
+        [HttpDelete]
+        [Route("api/cevapsil/{secId}")]
+        public SonucModel CevapSil(string secId)
+        {
+            Cevap kayit = db.Cevap.Where(s => s.secId == secId).FirstOrDefault();
+
+            if (kayit == null)
+            {
+                sonuc.islem = false;
+                sonuc.mesaj = "Soru bulunamadı";
+                return sonuc;
+            }
+
+            if (db.Kayit.Count(s => s.kaySecId == secId) > 0)
+            {
+                sonuc.islem = false;
+                sonuc.mesaj = "Bu seçenek bir soruya kayıtlı olduğu için silinemez.";
+                return sonuc;
+            }
+
+            db.Cevap.Remove(kayit);
+            db.SaveChanges();
+            sonuc.islem = true;
+            sonuc.mesaj = "Soru silindi";
+            return sonuc;
+        }
+
+        #endregion
+
+        #region Kayit
+
+        [HttpGet]
+        [Route("api/sorucevapliste")]
+        public List<KayitModel> SoruCevapListe(string soruId)
+        {
+            List<KayitModel> liste = db.Kayit.Where(s => s.kaySorId == soruId).Select(x => new KayitModel()
+            {
+                kayId = x.kayId,
+                kaySorId = x.kaySorId,
+                kaySecId = x.kaySecId
+            }).ToList();
+
+            foreach (var kayit in liste)
+            {
+                kayit.soruBilgi = SoruById(kayit.kaySorId);
+                kayit.cevapBilgi = CevapById(kayit.kaySecId);
+            }
+            return liste;
+        }
+
+        [HttpPost]
+        [Route("api/kayitekle")]
+        public SonucModel KayitEkle(KayitModel model)
+        {
+            if (db.Kayit.Count(s => s.kaySorId == model.kaySorId && s.kaySecId == model.kaySecId) < 0)
+            {
+                sonuc.islem = false;
+                sonuc.mesaj = "İlgili seçenek soruya önceden kayıtldır";
+                return sonuc;
+            }
+
+            Kayit yeni = new Kayit();
+            yeni.kayId = Guid.NewGuid().ToString();
+            yeni.kaySorId = model.kaySorId;
+            yeni.kaySecId = model.kaySecId;
+            db.Kayit.Add(yeni);
+            db.SaveChanges();
+
+            sonuc.islem = true;
+            sonuc.mesaj = "Kayıt eklendi";
+
+            return sonuc;
+        }
+
+        [HttpDelete]
+        [Route("api/kayitsil/{kayId}")]
+        public SonucModel KayitSil(string kayId)
+        {
+            Kayit kayit = db.Kayit.Where(s => s.kayId == kayId).SingleOrDefault();
+            if (kayit == null)
+            {
+                sonuc.islem = false;
+                sonuc.mesaj = "Kayıt bulunamadı";
+                return sonuc;
+            }
+            db.Kayit.Remove(kayit);
+            db.SaveChanges();
+            sonuc.islem = true;
+            sonuc.mesaj = "Kayıt Silindi";
+
+            return sonuc;
+        }
+
+        #endregion
+    }
+}
